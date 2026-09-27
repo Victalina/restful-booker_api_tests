@@ -1,5 +1,6 @@
 package com.herokuapp.restful_booker_tests;
 
+import com.herokuapp.restful_booker_tests.config.TestConfig;
 import com.herokuapp.restful_booker_tests.models.AuthRequestModel;
 import com.herokuapp.restful_booker_tests.models.AuthResponseModel;
 import org.junit.jupiter.api.Test;
@@ -13,7 +14,7 @@ public class AuthTests extends TestBase {
 
   @Test
   void successfulAuthShouldReturnTokenTest(){
-    AuthRequestModel authData = new AuthRequestModel(login, password);
+    AuthRequestModel authData = new AuthRequestModel(TestConfig.get("admin.login"), TestConfig.get("admin.password"));
     AuthResponseModel response = given()
             .contentType(JSON)
             .body(authData)

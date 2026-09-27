@@ -1,0 +1,4 @@
+base.url=https://restful-booker.herokuapp.com/
+
+admin.login=admin_login_here
+admin.password=admin_password_here
