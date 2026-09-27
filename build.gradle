@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.herokuapp.restful_booker'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+        'org.junit.jupiter:junit-jupiter:6.1.3',
+        'io.rest-assured:rest-assured:6.0.1'
+    )
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperties(System.getProperties())
+}
