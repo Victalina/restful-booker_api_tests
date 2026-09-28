@@ -1,4 +1,4 @@
-package com.herokuapp.restful_booker_tests;
+package tests;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
