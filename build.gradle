@@ -32,7 +32,8 @@ dependencies {
             'org.junit.jupiter:junit-jupiter:6.1.3',
             'io.rest-assured:rest-assured:6.0.1',
             'io.rest-assured:json-schema-validator:6.0.1',
-            "io.qameta.allure:allure-rest-assured:$allureVersion"
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            'com.github.javafaker:javafaker:1.0.2'
     )
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
