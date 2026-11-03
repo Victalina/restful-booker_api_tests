@@ -1,18 +1,18 @@
 package tests;
 
 import com.herokuapp.restful_booker_tests.utils.RandomUtils;
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 public class TestData {
 
-  private RandomUtils randomUtils = new RandomUtils();
+  private final RandomUtils randomUtils = new RandomUtils();
 
-  private String firstName = randomUtils.getRandomFirstName();
-  private String lastName = randomUtils.getRandomLastName();
-  private Integer totalPrice = randomUtils.getRandomTotalPrice();
-  private Boolean depositPaid = randomUtils.getRandomDepositPaid();
-  private String checkIn = randomUtils.getRandomCheckIn();
-  private String checkOut = randomUtils.getRandomCheckOut(checkIn, 20);
-  private String additionalNeeds = randomUtils.getRandomAdditionalNeeds();
+  private final String firstName = randomUtils.getRandomFirstName();
+  private final String lastName = randomUtils.getRandomLastName();
+  private final Integer totalPrice = randomUtils.getRandomTotalPrice();
+  private final Boolean depositPaid = randomUtils.getRandomDepositPaid();
+  private final String checkIn = randomUtils.getRandomCheckIn();
+  private final String checkOut = randomUtils.getRandomCheckOut(checkIn, 20);
+  private final String additionalNeeds = randomUtils.getRandomAdditionalNeeds();
 }

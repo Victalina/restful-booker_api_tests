@@ -56,7 +56,7 @@ public class Api {
             .spec(responseSpecStatusCode(201));
   }
 
-  @Step("Проверить получение несуществующего бронирования с id = {id]")
+  @Step("Проверить получение несуществующего бронирования с id = {id}")
   public void getNonExistentBooking(Integer id) {
     given(requestSpec)
             .when()
